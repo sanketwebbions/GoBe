@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
-
+{
+    __weak IBOutlet UIButton *btnRegister;
+    
+    __weak IBOutlet UIButton *btnLogin;
+    
+}
 @end
 

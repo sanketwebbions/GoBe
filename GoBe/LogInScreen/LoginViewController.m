@@ -1,32 +1,34 @@
 //
-//  ViewController.m
+//  LoginViewController.m
 //  GoBe
 //
-//  Created by SPARE CODE on 3/16/17.
+//  Created by SPARE CODE on 3/18/17.
 //  Copyright © 2017 SPARE CODE. All rights reserved.
 //
 
-#import "ViewController.h"
 #import "LoginViewController.h"
 #import "registrationViewController.h"
-
-
-@interface ViewController ()
+@interface LoginViewController ()
 
 @end
 
-@implementation ViewController
+@implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
-    btnRegister.layer.cornerRadius = 5.0;
-
-    btnLogin.layer.cornerRadius = 5.0;
+    btnForgotPassRef.layer.cornerRadius = 10.0f;
+    btnForgotPassRef.layer.borderColor = [UIColor whiteColor].CGColor;
+    btnForgotPassRef.layer.borderWidth = 3.0f;
     
+    btnLogInRef.clipsToBounds=YES;
+    btnForgotPassRef.clipsToBounds=YES;
+    btnFBRegisterRef.clipsToBounds=YES;
+    btnRegisterRef.clipsToBounds=YES;
+    
+    
+    // Do any additional setup after loading the view.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -35,19 +37,20 @@
 
 - (IBAction)btnRegister:(id)sender {
     
-    
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
     registrationViewController *lvc = [storyboard instantiateViewControllerWithIdentifier:@"registrationViewController"];
     [self.navigationController pushViewController:lvc animated:YES];
     
-    
 }
 
-- (IBAction)btnLogin:(id)sender {
+- (IBAction)btnForgotPassword:(id)sender {
+}
+- (IBAction)btnLogInwithFB:(id)sender {
+}
+- (IBAction)btnlogIn:(id)sender {
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-    LoginViewController *lvc = [storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
-    [self.navigationController pushViewController:lvc animated:YES];
+
+    
     
     
 }

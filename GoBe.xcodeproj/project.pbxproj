@@ -15,6 +15,9 @@
 		A0300D241E7ABCE0000DAA16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0300D221E7ABCE0000DAA16 /* LaunchScreen.storyboard */; };
 		A0300D2F1E7ABCE2000DAA16 /* GoBeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0300D2E1E7ABCE2000DAA16 /* GoBeTests.m */; };
 		A0300D3A1E7ABCE2000DAA16 /* GoBeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0300D391E7ABCE2000DAA16 /* GoBeUITests.m */; };
+		A0300D481E7ACD92000DAA16 /* Albert cropped.tif in Resources */ = {isa = PBXBuildFile; fileRef = A0300D471E7ACD92000DAA16 /* Albert cropped.tif */; };
+		A07B594E1E7D2BE900AE0847 /* registrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B594D1E7D2BE900AE0847 /* registrationViewController.m */; };
+		A07B59521E7D324200AE0847 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B59511E7D324200AE0847 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		A0300D351E7ABCE2000DAA16 /* GoBeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoBeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0300D391E7ABCE2000DAA16 /* GoBeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoBeUITests.m; sourceTree = "<group>"; };
 		A0300D3B1E7ABCE2000DAA16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0300D471E7ACD92000DAA16 /* Albert cropped.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Albert cropped.tif"; sourceTree = "<group>"; };
+		A07B594C1E7D2BE900AE0847 /* registrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registrationViewController.h; sourceTree = "<group>"; };
+		A07B594D1E7D2BE900AE0847 /* registrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registrationViewController.m; sourceTree = "<group>"; };
+		A07B59501E7D324200AE0847 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A07B59511E7D324200AE0847 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +109,13 @@
 		A0300D131E7ABCDD000DAA16 /* GoBe */ = {
 			isa = PBXGroup;
 			children = (
+				A0300D471E7ACD92000DAA16 /* Albert cropped.tif */,
 				A0300D171E7ABCDE000DAA16 /* AppDelegate.h */,
 				A0300D181E7ABCDE000DAA16 /* AppDelegate.m */,
 				A0300D1A1E7ABCDE000DAA16 /* ViewController.h */,
 				A0300D1B1E7ABCDE000DAA16 /* ViewController.m */,
+				A07B594F1E7D323000AE0847 /* LogInScreen */,
+				A07B594B1E7D2AD400AE0847 /* Registration */,
 				A0300D1D1E7ABCDF000DAA16 /* Main.storyboard */,
 				A0300D201E7ABCE0000DAA16 /* Assets.xcassets */,
 				A0300D221E7ABCE0000DAA16 /* LaunchScreen.storyboard */,
@@ -138,6 +149,24 @@
 				A0300D3B1E7ABCE2000DAA16 /* Info.plist */,
 			);
 			path = GoBeUITests;
+			sourceTree = "<group>";
+		};
+		A07B594B1E7D2AD400AE0847 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				A07B594C1E7D2BE900AE0847 /* registrationViewController.h */,
+				A07B594D1E7D2BE900AE0847 /* registrationViewController.m */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		A07B594F1E7D323000AE0847 /* LogInScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A07B59501E7D324200AE0847 /* LoginViewController.h */,
+				A07B59511E7D324200AE0847 /* LoginViewController.m */,
+			);
+			path = LogInScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +277,7 @@
 			files = (
 				A0300D241E7ABCE0000DAA16 /* LaunchScreen.storyboard in Resources */,
 				A0300D211E7ABCE0000DAA16 /* Assets.xcassets in Resources */,
+				A0300D481E7ACD92000DAA16 /* Albert cropped.tif in Resources */,
 				A0300D1F1E7ABCDF000DAA16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,8 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0300D1C1E7ABCDE000DAA16 /* ViewController.m in Sources */,
+				A07B594E1E7D2BE900AE0847 /* registrationViewController.m in Sources */,
 				A0300D191E7ABCDE000DAA16 /* AppDelegate.m in Sources */,
 				A0300D161E7ABCDD000DAA16 /* main.m in Sources */,
+				A07B59521E7D324200AE0847 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +537,7 @@
 				A0300D401E7ABCE2000DAA16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0300D411E7ABCE2000DAA16 /* Build configuration list for PBXNativeTarget "GoBeTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +546,7 @@
 				A0300D431E7ABCE2000DAA16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0300D441E7ABCE2000DAA16 /* Build configuration list for PBXNativeTarget "GoBeUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +555,7 @@
 				A0300D461E7ABCE2000DAA16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
