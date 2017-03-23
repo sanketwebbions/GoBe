@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "registrationViewController.h"
+#import "NewsAndTrendingViewController.h"
+
 @interface LoginViewController ()
 
 @end
@@ -49,8 +51,9 @@
 }
 - (IBAction)btnlogIn:(id)sender {
     
-
-    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    NewsAndTrendingViewController *lvc = [storyboard instantiateViewControllerWithIdentifier:@"NewsAndTrendingViewController"];
+    [self.navigationController pushViewController:lvc animated:YES];
     
     
 }

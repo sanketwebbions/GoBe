@@ -16,6 +16,7 @@
 		A0300D2F1E7ABCE2000DAA16 /* GoBeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0300D2E1E7ABCE2000DAA16 /* GoBeTests.m */; };
 		A0300D3A1E7ABCE2000DAA16 /* GoBeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0300D391E7ABCE2000DAA16 /* GoBeUITests.m */; };
 		A0300D481E7ACD92000DAA16 /* Albert cropped.tif in Resources */ = {isa = PBXBuildFile; fileRef = A0300D471E7ACD92000DAA16 /* Albert cropped.tif */; };
+		A06CBB161E8401CB00FEEFE0 /* NewsAndTrendingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A06CBB151E8401CB00FEEFE0 /* NewsAndTrendingViewController.m */; };
 		A07B594E1E7D2BE900AE0847 /* registrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B594D1E7D2BE900AE0847 /* registrationViewController.m */; };
 		A07B59521E7D324200AE0847 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07B59511E7D324200AE0847 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,8 @@
 		A0300D391E7ABCE2000DAA16 /* GoBeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoBeUITests.m; sourceTree = "<group>"; };
 		A0300D3B1E7ABCE2000DAA16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0300D471E7ACD92000DAA16 /* Albert cropped.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "Albert cropped.tif"; sourceTree = "<group>"; };
+		A06CBB141E8401CB00FEEFE0 /* NewsAndTrendingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsAndTrendingViewController.h; sourceTree = "<group>"; };
+		A06CBB151E8401CB00FEEFE0 /* NewsAndTrendingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsAndTrendingViewController.m; sourceTree = "<group>"; };
 		A07B594C1E7D2BE900AE0847 /* registrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registrationViewController.h; sourceTree = "<group>"; };
 		A07B594D1E7D2BE900AE0847 /* registrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registrationViewController.m; sourceTree = "<group>"; };
 		A07B59501E7D324200AE0847 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -116,6 +119,7 @@
 				A0300D1B1E7ABCDE000DAA16 /* ViewController.m */,
 				A07B594F1E7D323000AE0847 /* LogInScreen */,
 				A07B594B1E7D2AD400AE0847 /* Registration */,
+				A06CBB101E84012E00FEEFE0 /* News & Trending */,
 				A0300D1D1E7ABCDF000DAA16 /* Main.storyboard */,
 				A0300D201E7ABCE0000DAA16 /* Assets.xcassets */,
 				A0300D221E7ABCE0000DAA16 /* LaunchScreen.storyboard */,
@@ -149,6 +153,15 @@
 				A0300D3B1E7ABCE2000DAA16 /* Info.plist */,
 			);
 			path = GoBeUITests;
+			sourceTree = "<group>";
+		};
+		A06CBB101E84012E00FEEFE0 /* News & Trending */ = {
+			isa = PBXGroup;
+			children = (
+				A06CBB141E8401CB00FEEFE0 /* NewsAndTrendingViewController.h */,
+				A06CBB151E8401CB00FEEFE0 /* NewsAndTrendingViewController.m */,
+			);
+			path = "News & Trending";
 			sourceTree = "<group>";
 		};
 		A07B594B1E7D2AD400AE0847 /* Registration */ = {
@@ -303,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A06CBB161E8401CB00FEEFE0 /* NewsAndTrendingViewController.m in Sources */,
 				A0300D1C1E7ABCDE000DAA16 /* ViewController.m in Sources */,
 				A07B594E1E7D2BE900AE0847 /* registrationViewController.m in Sources */,
 				A0300D191E7ABCDE000DAA16 /* AppDelegate.m in Sources */,
